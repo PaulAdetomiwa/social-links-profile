@@ -23,7 +23,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- https://github.com/PaulAdetomiwa/blog-preview-card/blob/main/index.html
+- https://github.com/PaulAdetomiwa/social-links-profile/blob/main/index.html
 
 ## My process
 
@@ -36,46 +36,39 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 ### What I learned
 
 ```html
-<div class="container">
-  <div class="first_half">
-    <img src="assets/images/illustration-article.svg" alt="">
-  </div>
-  <div class="second_half">
-    <h3>Learning</h3>
-
-    <p>Published 21 Dec 2023</p>
-
-    <h2>HTML & CSS foundations</h2>
-
-    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
-
-    <div class="me"><img src="assets/images/image-avatar.webp" alt=""><span>Greg Hooper</span></div>
-  </div>
-</div>
+<div class="second_half">
+      <a href="https://github.com/PaulAdetomiwa">GitHub</a>
+      <a href="https://www.frontendmentor.io/profile/PaulAdetomiwa">Frontend Mentor</a>
+      <a href="https://www.linkedin.com/in/paul-adewole/">LinkedIn</a>
+      <a href="https://x.com/AdewolePaul6">Twitter</a>
+      <a href="https://www.instagram.com/paul_adetomiwa/">Instagram</a>
+    </div>
 ```
-- This part was a bit tricky. My idea was to cut up the .container div into two parts, two divs without borders, in a column. This would overlap the .container div with no space left, making it easier to input elements without them scattering.
+- This part carries most of the webpage. It's just a couple of links that have been designed using CSS, and connect to the websites that they indicate.
 
 ```css
-.container {
-      font-family: 'Figtree', sans-serif;
-      background-color: hsl(0, 0%, 100%);
-      width: 350px;
-      height: 500px;
-      border-radius: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      box-shadow: 8px 8px 0 black; 
-      position: relative;
-      overflow: hidden;
+.second_half a {
+      color: hsl(0, 0%, 100%);
+      font-size: 12px;
+      font-weight: 500;
+      background-color: hsl(0, 0%, 20%);
+      height: 30px;
+      width: 300px;
+      text-align: center;
+      padding-top: 15px;
+      border-radius: 5px;
+      border: 0;
+      margin: 0;
+      text-decoration-line: none;
     }
 
-    .first_half, .second_half {
-      position: relative; 
-      width: 90%; 
+    .second_half a:hover {
+      background-color: hsl(75, 94%, 57%);
+      cursor: pointer;
+      color: hsl(0, 0%, 12%);
     }
 ```
-- This is how, using CSS, I was successfully able to divide .container into two parts, which would later be the containers for the other elements within the webpage.
+- This covers all the customization of the links. It also changes background and text color and cursor when hovering on the links. 
 
 - I also set a minimum height for the body to ensure responsiveness. 
 
